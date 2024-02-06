@@ -52,19 +52,23 @@ section h2 {
 
 .history, .figures, .practices, .gallery {
     margin: 25px;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 35px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.figure {
-    margin-top: 15px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+footer {
+    background-color: #4997d0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
+
+
+
 
  /* ---- Photo Gallery ---- */
 
@@ -95,7 +99,15 @@ section h2 {
 
 
 
+ /* ---- Important Figures ---- */
 
+.figure {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .figure-image img {
     max-width:100%;
@@ -122,10 +134,21 @@ section h2 {
 }
 
 
+ /* ---- Cultural Practices ---- */
 
-footer {
-    background-color: #4997d0;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+.practices p {
+
+    margin-left:  15%;
+    margin-right: 15%;
+    line-height: 1.2;
 }
+
+
+/* ---- History ---- */
+.history p {
+
+    margin-left:  15%;
+    margin-right: 15%;
+    line-height: 1.2;
+}
+
