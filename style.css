@@ -50,7 +50,7 @@ section h2 {
     text-align: center;
 }
 
-.history, .figures, .practices, .gallery {
+.history, .figures, .practices, .gallery, .home {
     margin: 25px;
     padding-top: 15px;
     padding-bottom: 35px;
@@ -68,6 +68,47 @@ footer {
 }
 
 
+
+ /* ---- Home ---- */
+
+ h3 {
+    align-self: center;
+ }
+.container {
+    width: 100%;
+    overflow: hidden; /* Clear floats */
+  }
+
+.container ul li{
+    line-height: 2;
+}
+  .left-column, .right-column {
+    float: left;
+    box-sizing: border-box; 
+  }
+
+  .left-column {
+    width: 50%; 
+    padding: 20px; 
+
+  }
+
+  .right-column {
+    width: 50%; 
+    padding: 20px; 
+  }
+
+  .right-column img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  /* Clearfix */
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
  /* ---- Photo Gallery ---- */
@@ -143,9 +184,7 @@ footer {
     line-height: 1.2;
 }
 
-
-/* ---- History ---- */
-.history p {
+#history p {
 
     margin-left:  15%;
     margin-right: 15%;
