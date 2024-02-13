@@ -114,12 +114,14 @@ footer {
  /* ---- Photo Gallery ---- */
 
 .photos {
-    text-align: center; 
-    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    row-gap: 15px;
 }
 
 .photo {
-    display: inline-block;
     width: calc(33.333% - 32px);
     margin: 15px;
     vertical-align: top;
@@ -136,8 +138,7 @@ footer {
 
 .photo p {
     text-align: center;
-}
-
+} 
 
 
  /* ---- Important Figures ---- */
