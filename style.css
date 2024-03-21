@@ -53,6 +53,7 @@ section h2 {
 .history, .figures, .practices, .gallery, .home {
     margin: 25px;
     padding-top: 15px;
+    padding-right: 55px;
     padding-bottom: 35px;
     background-color: #fff;
     border-radius: 8px;
@@ -68,20 +69,58 @@ footer {
 }
 
 
-
- /* ---- Home ---- */
-
- h3 {
-    align-self: center;
- }
+  /* ---- Home ---- */
 .container {
-    width: 100%;
-    padding-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    justify-content: space-evenly;
-  }
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto;
+    flex-wrap: wrap; 
+}
+
+.container img {
+    max-width: 8000%; 
+    height: auto;
+    margin-top: 20px; 
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    line-height: 2; 
+    align-self: start;
+}
+
+.container h3 {
+    width: 100%; 
+    text-align: center; 
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container-item {
+        flex: 1; 
+        margin: 0 10px; 
+    }
+
+    .iframe-container {
+        max-width: 600px;
+        align-self: start; 
+    }
+}
+
 
 .container ul li{
     line-height: 2;
