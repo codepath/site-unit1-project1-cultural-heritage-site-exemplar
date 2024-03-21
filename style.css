@@ -53,6 +53,7 @@ section h2 {
 .history, .figures, .practices, .gallery, .home {
     margin: 25px;
     padding-top: 15px;
+    padding-right: 55px;
     padding-bottom: 35px;
     background-color: #fff;
     border-radius: 8px;
@@ -68,20 +69,57 @@ footer {
 }
 
 
-
- /* ---- Home ---- */
-
- h3 {
-    align-self: center;
- }
+  /* ---- Home ---- */
 .container {
-    width: 100%;
-    padding-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    justify-content: space-evenly;
-  }
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto;
+    flex-wrap: wrap; 
+}
+
+.container img {
+    max-width: 8000%; 
+    height: auto;
+    margin-top: 20px; 
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    line-height: 2; 
+    align-self: start;
+}
+
+.container h3 {
+    width: 100%; 
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container-item {
+        flex: 1; 
+        margin: 0 10px; 
+    }
+
+    .iframe-container {
+        max-width: 600px;
+        align-self: start; 
+    }
+}
+
 
 .container ul li{
     line-height: 2;
@@ -118,54 +156,81 @@ footer {
 } 
 
 
- /* ---- Important Figures ---- */
 
-.figure {
-    margin-top: 15px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.figure-image img {
-    max-width:100%;
-}
-
-.figure-image {
-    flex-basis: 40%;
-}
-
-
-.figure-photo{
+/* ---- Top Attractions ---- */
+.top-attractions {
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.figure-desc {
-    padding-left: 20px;
+.attraction {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
 }
 
-.figure-desc p{
-    padding-top: 0;
-    margin-top: 0;
+.attraction img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/* Food Guide */
+.food-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-
- /* ---- Cultural Practices ---- */
-
-.practices p {
-
-    margin-left:  15%;
-    margin-right: 15%;
-    line-height: 1.2;
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
 }
 
-#history p {
-
-    margin-left:  15%;
-    margin-right: 15%;
-    line-height: 1.2;
+.restaurant img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
+.restaurant h3 {
+    margin: 0;
+    color: #2A5DB0;
+}
+
+.restaurant p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.restaurant a {
+    margin-top: 10px;
+    color: #2A5DB0;
+    text-decoration: none;
+    border: 1px solid #2A5DB0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.restaurant a:hover {
+    background-color: #2A5DB0;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .food-guide {
+        padding: 10px;
+    }
+}
