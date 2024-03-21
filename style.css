@@ -118,59 +118,8 @@ footer {
 } 
 
 
- /* ---- Important Figures ---- */
 
-.figure {
-    margin-top: 15px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.figure-image img {
-    max-width:100%;
-}
-
-.figure-image {
-    flex-basis: 40%;
-}
-
-
-.figure-photo{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-
-.figure-desc {
-    padding-left: 20px;
-}
-
-.figure-desc p{
-    padding-top: 0;
-    margin-top: 0;
-}
-
-
- /* ---- Cultural Practices ---- */
-
-.practices p {
-
-    margin-left:  15%;
-    margin-right: 15%;
-    line-height: 1.2;
-}
-
-#history p {
-
-    margin-left:  15%;
-    margin-right: 15%;
-    line-height: 1.2;
-}
-
-
-/* Top Attractions */
+/* ---- Top Attractions ---- */
 .top-attractions {
     display: flex;
     flex-direction: column;
