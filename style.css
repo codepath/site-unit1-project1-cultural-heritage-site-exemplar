@@ -191,5 +191,59 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+/* Food Guide */
+.food-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+}
 
+.restaurant img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.restaurant h3 {
+    margin: 0;
+    color: #2A5DB0;
+}
+
+.restaurant p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.restaurant a {
+    margin-top: 10px;
+    color: #2A5DB0;
+    text-decoration: none;
+    border: 1px solid #2A5DB0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.restaurant a:hover {
+    background-color: #2A5DB0;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .food-guide {
+        padding: 10px;
+    }
+}
